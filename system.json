@@ -1,0 +1,49 @@
+{
+  "name": "elemental",
+  "title": "Elemental Tabletop Rules",
+  "description": "Virtual Tabletop system for Elemental RPG",
+  "version": "1.0.0",
+  "templateVersion": 2,
+  "author": "Kevin Hanson",
+  "scripts": [
+    "scripts/system-script-1.js",
+    "scripts/system-script-2.js"
+  ],
+  "esmodules": [
+    "scripts/system-module-1.mjs"
+  ],
+  "styles": [
+    "styles/system-styles-1.css",
+    "styles/system-styles-2.css"
+  ],
+  "packs": [
+    {
+      "name": "monsters",
+      "label": "My Monsters",
+      "path": "packs/monsters.db",
+      "type": "Actor"
+    },
+    {
+      "name": "items",
+      "label": "My Items",
+      "path": "packs/items.db",
+      "type": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "initiative": "1d6",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.power",
+  "url": "https://github.com/kjrhanson/ElementalTTRPG",
+  "manifest": "https://your/hosted/system/repo/system.json"
+  //"download": "https://your/packaged/download/archive.zip"
+}
